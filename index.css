@@ -121,7 +121,7 @@ h1 {
 
 hr {
     border: 1px solid lightgrey;
-    width:24%;
+    width: 195px;
 }
 
 p {
@@ -273,6 +273,10 @@ section.sect {
     .square {
         width: 30%;
         padding: 10% 0;
+    }
+    .nav li a {
+        padding: 22px 0;
+        font-size: 6px;
     }
 }
 
