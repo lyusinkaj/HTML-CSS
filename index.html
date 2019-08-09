@@ -26,11 +26,17 @@
                             <img src="./logo.jpg" alt="logo">
                             <h2>FLEX</h2>
                         </a>
-                        <li><a href="#contact">CONTACT</a></li>
-                        <li><a href="#team">TEAM</a></li>
-                        <li><a href ="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#service">SERVICES</a></li>
-                        <li class="active"><a href="#home">HOME</a></li>
+                        <div class="mobile-menu" onclick="toggleClass()">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="menu-items">
+                            <li class="active"><a href="#home">HOME</a></li>
+                            <li><a href="#service">SERVICES</a></li>
+                            <li><a href ="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#team">TEAM</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </div>
+                        
                     </ul>
                 </div>
             </div>
@@ -39,11 +45,11 @@
             <hr>
             <p>LET US DESIGN YOUR WEBSITE</p>
             <div class="button">
-                    <button class="click">RESPONSIVE TEMPLATE</button>
+                <button class="click">RESPONSIVE TEMPLATE</button>
             </div>   
         </section>
         
-        <section class="sect">
+        <section class="sect" id="service">
             <h3>OUR SERVICES</h3>
             <div class="second">
                 <p>LET US HELP YOU TO CREATE PROFESSIONAL WEBSITES</p>
@@ -54,7 +60,7 @@
             <div class="flask square"><i class="fas fa-flask"></i></div>
         </section>
 
-        <section class="sect">
+        <section class="sect" id="portfolio">
             <h5>OUR PORTFOLIO</h5>
             <div class="portfolio">
                 <p>WHAT WE HAVE DONE SO FAR</p>
@@ -71,7 +77,22 @@
                     <div class="img8 square"></div>
                 </div>
             </div>
+            
+                <a href="#" class="angleup"><i class="fas fa-angle-up"></i></a>
+            
         </section>
     </div>
+
+    <script>
+        function toggleClass() {
+            var x = document.getElementsByClassName('menu-items')[0];
+            
+            if (x.className === 'menu-items') {
+                x.className += ' opened';
+            } else {
+                x.className = 'menu-items';
+            }
+        }
+    </script>
 </body>
 </html>

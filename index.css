@@ -42,10 +42,14 @@ ul {
     font-size: 8px;
 }
 
-.nav li {
+.menu-items {
     float: right;
+}
+
+.nav li {
     position: relative;
     margin: 0 5px;
+    display: inline-block;
 }
 
 .nav li a {
@@ -70,6 +74,22 @@ ul {
     position: absolute;
     width: 100%;
     height: 2px;
+}
+
+.nav .mobile-menu {
+    display: none;
+    width: 36px;
+    height: 36px;
+    float: right;
+    position: relative;
+    top: 7px;
+    right: 7px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    background: #EC523F;
+    color: white;
+    cursor: pointer;
 }
 
 .btn {
@@ -241,6 +261,21 @@ h5 {
 section.sect {
     text-align: center;
 }
+
+.angleup {
+    bottom: 5px;
+    right: 5px;
+    position: fixed;
+    display: flex;
+    border-radius: 100%;
+    background-color: #EC523F;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 /* medias */
 @media only screen and (max-width: 900px) {
     .container {
@@ -255,27 +290,52 @@ section.sect {
 }
 
 @media only screen and (max-width: 570px) {
+    ul {
+        padding: 0;
+        height: 50px;
+        overflow: visible;
+    }
+
+    .logo > img {
+        height: 50px;
+    }
+
     .logo > h2 {
-        left: 55px;
+        left: 60px;
         font-size: 18px;
-        top: 2px;
+        top: 15px;
+        margin: 0;
+    }
+
+    .nav .mobile-menu {
+        display: inline-block;
+    }
+
+    .menu-items {
+        float: none;
+        position: relative;
+        top: 50px;
+        display: none;
+    }
+
+    .menu-items.opened {
+        display: block;
+    }
+
+    .nav li {
+        margin: 0;
+        display: block;
+        background-color: white;
     }
 
     .nav li a {
-        padding: 20px 0;
-        font-size: 8px;
+        padding: 20px 10px;
+        text-align: left;
     }
 
     .square {
         width: 30%;
         padding: 10% 0;
-    }
-    .nav li a {
-        padding: 22px 0;
-        font-size: 6px;
-    }
-    .logo > img {
-        height: 53px;
     }
 }
 
