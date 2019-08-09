@@ -4,26 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="shortcut icon" type="image/ico" href="./favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/323fc99f85.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
+    <div class="img"></div>
     <div class="container">
-        <p>Welcome</p>
-        <form class="form" onsubmit="onFormSubmit(event)">
-            <input name="username" class="form-item input" type="text" placeholder="Username" required>
-            <input name="password" class="form-item input" type="text" placeholder="Password" required>
-            <button class="form-item button" type="submit">Login</button>
-        </form>
-    </div>
+        <section>
+            <div class="btn">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-basketball-ball"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <div class="first">
+                <div class="nav">
+                    <ul>
+                        <a href="#" class="logo">
+                            <img src="./logo.jpg" alt="logo">
+                            <h2>FLEX</h2>
+                        </a>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#team">TEAM</a></li>
+                        <li><a href ="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#service">SERVICES</a></li>
+                        <li class="active"><a href="#home">HOME</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <script>
-        function onFormSubmit(event) {
-            let str = 'Username: ' + event.target[0].value + '\n' + 'Password: ' + event.target[1].value;
-            alert(str);
-        }
-    </script>
+            <h1>DIGITAL STUDIO</h1>
+            <hr>
+            <p>LET US DESIGN YOUR WEBSITE</p>
+            <div class="button">
+                    <button class="click">RESPONSIVE TEMPLATE</button>
+            </div>   
+        </section>
+        
+        <section class="sect">
+            <h3>OUR SERVICES</h3>
+            <div class="second">
+                <p>LET US HELP YOU TO CREATE PROFESSIONAL WEBSITES</p>
+            </div>
+            <div class="file square"><i class="far fa-file-code"></i></div>
+            <div class="paper square"><i class="far fa-paper-plane"></i></div>
+            <div class="landmark square"><i class="fas fa-landmark"></i></div>
+            <div class="flask square"><i class="fas fa-flask"></i></div>
+        </section>
+
+        <section class="sect">
+            <h5>OUR PORTFOLIO</h5>
+            <div class="portfolio">
+                <p>WHAT WE HAVE DONE SO FAR</p>
+                <div class="one">
+                    <div class="img1 square"></div>
+                    <div class="img2 square"></div>
+                    <div class="img3 square"></div>
+                    <div class="img4 square"></div>
+                </div>
+                <div class="two">
+                    <div class="img5 square"></div>
+                    <div class="img6 square"></div>
+                    <div class="img7 square"></div>
+                    <div class="img8 square"></div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
