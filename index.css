@@ -255,10 +255,6 @@ section.sect {
 }
 
 @media only screen and (max-width: 570px) {
-    .logo > img {
-        height: 51px;
-    }
-
     .logo > h2 {
         left: 55px;
         font-size: 18px;
@@ -277,6 +273,9 @@ section.sect {
     .nav li a {
         padding: 22px 0;
         font-size: 6px;
+    }
+    .logo > img {
+        height: 53px;
     }
 }
 
