@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/323fc99f85.js"></script>
+    <link rel="stylesheet" href="todo.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="first">
+        <div class="main">
+            <div class="nav">
+                <p>Tasks</p>
+                   <a href="#" class="icon"><i class="fas fa-bars"></i></a> 
+            </div>
+            <div class="checkbox-container">
+                <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <p>Prepare For Session</p>
+                    <span class="checkmark"></span>
+                </label>
+            <hr>
+                <label class="container">
+                    <input type="checkbox">
+                    <p>Assign Tasks</p>
+                    <span class="checkmark"></span>
+                </label>
+            <hr>
+                <label class="container">
+                    <input type="checkbox">
+                    <p>Be there on time</p>
+                    <span class="checkmark"></span>
+                </label>
+            <hr>
+                <label class="container">
+                    <input type="checkbox">
+                    <p>Start Session</p>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+</div>
+   
+
+<script>
+    (function (){
+        var menuIcon = document.getElementsByClassName("icon")[0];
+        var container = document.getElementsByClassName("checkbox-container")[0];
+        menuIcon.addEventListener("click", function () {
+            if (menuIcon.className === "icon") {
+                menuIcon.classList += " opened";
+                container.classList += " opened";
+            } else {
+                menuIcon.className = "icon";
+                container.className = "checkbox-container";
+            }
+        });
+    })()
+</script>
+ 
+              
+</body>
+</html>

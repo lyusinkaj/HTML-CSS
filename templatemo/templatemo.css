@@ -11,6 +11,7 @@ html, body {
 
 a {
     text-decoration: none;
+    color: #444444;
 }
 .container {
     max-width: 1155px;
@@ -229,13 +230,71 @@ hr {
     flex-wrap: wrap;
 }
 
-.photo .l {
+
+
+.walk:hover .l {
+    display: none;
+}
+
+.walk:hover {
+    background-color: #ee5341;
     width: 260px;
+    margin-top: 15px;
+}
+
+.walk h3,
+.walk p,
+.walk a {
+    display: none;
+    line-height: 25px;
+    margin: 0;
+    color: white;
+}
+
+.walk:hover h3,
+.walk:hover p,
+.walk:hover a {
+    display: block;
+    
+}
+
+.walk .l {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 265px;
-    margin-bottom: 30px;
+    height: 287px;
+    margin-top: 15px ;
 }
+
+.walk:hover h3,
+.walk:hover p,
+.walk:hover a {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 25px;
+}
+
+
+.walk i {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #ee5341;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .first {
     margin-bottom: 63px;
@@ -253,6 +312,78 @@ hr {
     background-repeat: no-repeat;
     height: 265px;
     margin-bottom: 30px;
+    border-radius: 100%;
+}
+
+
+.work:hover .people {
+    display: none;
+}
+
+.work:hover {
+    background-color: #ee5341;
+    width: 260px;
+    margin-top: 15px;
+}
+
+.work h3,
+.work p,
+.work a {
+    display: none;
+    line-height: 25px;
+    margin: 0;
+    color: white;
+}
+
+.work:hover h3,
+.work:hover p,
+.work:hover a {
+    display: block;
+    
+}
+
+.work .people {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 265px;
+    margin-top: 15px ;
+}
+
+.work:hover h3,
+.work:hover p,
+.work:hover a {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 57px;
+    margin-bottom: -43px;
+}
+
+
+.work:hover i {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #ee5341;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+.work:hover {
+    border-radius: 100%;
+    height: 265px;
+}
+.work {
     border-radius: 100%;
 }
 
@@ -440,6 +571,17 @@ h1 {
     height: 277px;
     width: 217px;
 }
+
+
+.walk:hover {
+    height: 260px;
+    width: 217px;
+}
+.work:hover {
+    height: 233px;
+    width: 217px;
+}
+
 .photo {
     margin: 60px;
 }
@@ -460,6 +602,13 @@ h1 {
 .square {
     height: 277px;
     width: 380px;
+}
+.walk:hover {
+    height: 330px;
+    width: 380px; 
+}
+.work:hover {
+    width: 100%;
 }
 
 .box {
@@ -523,6 +672,13 @@ span {
 .square {
     width: 100%;
 }
+.walk:hover {
+    height: 550px;
+    width: 100%;
+}
+.walk {
+    width: 100%;
+}
 
 .box {
     margin: 0;
@@ -532,8 +688,9 @@ span {
     height: 550px;
     width: 100%;
 }
-.photo {
+.portfolio .photo {
     margin: 0;
+
 }
 
 .peoples .people {
