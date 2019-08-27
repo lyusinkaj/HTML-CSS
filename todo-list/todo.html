@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/323fc99f85.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="todo.css">
     <title>Document</title>
 </head>
@@ -21,43 +22,79 @@
                     <p>Prepare For Session</p>
                     <span class="checkmark"></span>
                 </label>
-            <hr>
+                <hr>
                 <label class="container">
                     <input type="checkbox">
                     <p>Assign Tasks</p>
                     <span class="checkmark"></span>
                 </label>
-            <hr>
+                <hr>
                 <label class="container">
                     <input type="checkbox">
                     <p>Be there on time</p>
                     <span class="checkmark"></span>
                 </label>
-            <hr>
+                <hr>
                 <label class="container">
                     <input type="checkbox">
                     <p>Start Session</p>
                     <span class="checkmark"></span>
                 </label>
+                <hr>
+                <form class="add-container" onsubmit="onFormSubmit(event)">
+                    <input type="text" placeholder="Add Task">
+                    <button type="submit">Add +</button>
+                </form>
             </div>
         </div>
 </div>
    
 
 <script>
-    (function (){
-        var menuIcon = document.getElementsByClassName("icon")[0];
+    var menuIcon = document.getElementsByClassName("icon")[0];
+    var container = document.getElementsByClassName("checkbox-container")[0];
+    menuIcon.addEventListener("click", function () {
+        if (menuIcon.className === "icon") {
+            menuIcon.classList += " opened";
+            container.classList += " opened";
+        } else {
+            menuIcon.className = "icon";
+            container.className = "checkbox-container";
+        }
+    });
+
+    function onFormSubmit(event) {
+        event.preventDefault();
+        var titleName = event.target[0].value;
+
+        if (!titleName) {
+            return;
+        }
+        var label = document.createElement("label");
+        label.classList.add("container");
+
+        var input = document.createElement("input");
+        input.setAttribute("type", "checkbox");
+
+        var p = document.createElement("p");
+        var node = document.createTextNode(titleName);
+        p.appendChild(node);
+
+        var span = document.createElement("span");
+        span.setAttribute("class", "checkmark");
+
+        var hr = document.createElement("hr");
+
+        label.appendChild(input);
+        label.appendChild(p);
+        label.appendChild(span);
+
         var container = document.getElementsByClassName("checkbox-container")[0];
-        menuIcon.addEventListener("click", function () {
-            if (menuIcon.className === "icon") {
-                menuIcon.classList += " opened";
-                container.classList += " opened";
-            } else {
-                menuIcon.className = "icon";
-                container.className = "checkbox-container";
-            }
-        });
-    })()
+        var form = document.getElementsByClassName("add-container")[0];
+        container.insertBefore(label, form);
+        container.insertBefore(hr, form);
+        event.target.reset();
+    }
 </script>
  
               
