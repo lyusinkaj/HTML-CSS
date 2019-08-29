@@ -1,0 +1,135 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    background-image: url("image_from_ios.jpg");
+    background-repeat: round;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.opacity {
+    background-color: #2dbe60; 
+    background-repeat: round;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.text h2,
+h1,
+p {
+    color: #fff;
+    margin-left: 70px;
+}
+
+.text h2 {
+    margin-top: 50px;
+    font-style: italic;
+    margin-bottom: 230px;
+}
+
+.register {
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+}
+
+.inp {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    font-size: 13px;
+    padding: le;
+    margin-left: pa;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color: #c5c7c6;
+}
+
+.submit {
+    width: 322px;
+    padding: 0;
+    background-color: #2dbe60;
+    color: #fff;
+    height: 39px;
+    font-size: 15px;
+}
+
+.inp p {
+    color: #84878a;
+    margin: 0;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #2dbe60;
+}
+
+.par p {
+    justify-content: flex-end;
+    display: flex;
+    color:  #2dbe60;
+}
+
+@media only screen and (max-width: 780px) {
+    .main,
+    .background,
+    .opacity {
+        width: 100%;
+        height: 70vh;
+    }
+    .register {
+        width: 100%;
+        height: 390px;
+    }
+    .inp {
+        height: 390px;
+    }
+}
+
+ 
