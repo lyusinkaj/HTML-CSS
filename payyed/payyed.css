@@ -126,6 +126,7 @@ a {
     .register {
         width: 100%;
         height: 390px;
+        display: block;
     }
     .inp {
         height: 390px;
